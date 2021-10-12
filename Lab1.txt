@@ -1,0 +1,97 @@
+
+p3: compute the sum of n numbers
+~
+	define number n
+	define number sum=0 
+	define number x 
+~
+start
+	read(n)
+	for (i=1, i<n, i=i+1) do:
+		read(x)
+		sum = sum + x
+	write(sum)
+end
+
+
+
+
+P2.verify if a number is prime
+ 
+ 
+~
+	define number prime 
+	define number i 
+	define number ok=0 
+~
+start 
+	
+	read(prime)
+	for (i=1, i<prime/2, i=i+1) do:
+		if ( prime % i == 0) then:
+			ok=1
+	if(ok==0) do:
+		write('Is prime')
+	else:
+		write('Is not prime')
+	
+	
+	
+end 
+
+
+
+P1.compute de max/min of 3 numbers;
+~
+	define number a 
+	define number b 
+	define number c  
+~
+start
+	
+	read(a)
+	read(b)
+	read(c)
+	define number aux
+	if (a > b) then:
+		aux=a
+	else:
+		aux=b
+	if( aux > c) then:
+		write(aux)
+	else:
+		write(c)
+end
+
+
+
+p1err. 
+
+~
+	define number a 
+	define number ? // lexical error, variables are only numbers and letters and only starting with a letter, "?" won't be defined 
+	define number b 
+	define number c  
+~
+start
+	
+	read(a)
+	read(b)
+	read(c)
+	define aux number
+	if (a > b) then:
+		aux=a
+	else:
+		aux=b
+	if {aux > c} then:  //lexical error, "{}" won't be defined in my language
+		write(aux)
+	else:
+		write(c)
+end
+
+
+
+
+
+
+
