@@ -1,0 +1,13 @@
+~
+define number n
+define number sum
+define number x
+~
+
+start
+read (n)
+for (i=1, i < n, i=i+1) do:
+    read(x)
+    sum = sum + x
+write(sum)
+end

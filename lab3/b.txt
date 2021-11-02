@@ -1,0 +1,17 @@
+~
+    define number prime
+    define number i
+    define number ok=0
+~
+start 
+
+    read(prime)
+    for (i=1, i<prime/2, i=i+1) do:
+       if ( prime % i == 0) then:
+           ok=1
+    if(ok==0) do:
+        write("Is prime")
+    else:
+        write("Is not prime")
+
+end 

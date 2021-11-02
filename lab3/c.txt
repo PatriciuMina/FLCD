@@ -1,0 +1,24 @@
+~
+    define number a
+    define number b
+    define number c
+~
+start
+
+    read(a)
+    read(b)
+    read(c)
+    define number aux
+    if (a > b) then:
+        aux = a
+    else:
+        aux = b
+    if( aux > c) then:
+        write(aux)
+    else:
+        write(c)
+end
+
+
+
+
